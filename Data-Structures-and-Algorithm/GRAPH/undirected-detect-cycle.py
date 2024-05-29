@@ -75,7 +75,7 @@ class Graph:
 
 
 # Create a graph given in the above diagram
-g = Graph(5)
+g = Graph(8)
 g.addEdge(1, 0)
 g.addEdge(1, 2)
 g.addEdge(2, 0)
@@ -86,12 +86,15 @@ if g.isCyclic():
 	print("Graph contains cycle")
 else:
 	print("Graph doesn't contain cycle ")
-g1 = Graph(3)
-g1.addEdge(0, 1)
-g1.addEdge(1, 2)
+
+g.addEdge(0, 1)
+g.addEdge(1, 2)
+
+g.addEdge(7, 8)
+g.addEdge(8, 1)
 
 
-if g1.isCyclic():
+if g.isCyclic():
 	print("Graph contains cycle")
 else:
 	print("Graph doesn't contain cycle ")
