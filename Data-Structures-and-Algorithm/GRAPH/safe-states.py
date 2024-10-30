@@ -1,4 +1,4 @@
-graph = [[1,2],[2,3],[5],[0],[5],[],[]]
+graph = [[2],[2,3],[5],[0],[5],[],[]]
 
 def safeState(graph):
     n = len(graph)
